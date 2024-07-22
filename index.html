@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		/* Define o estilo do corpo da página */
+		body {
+			background-color: rgb(85, 162, 185);
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
+		}
+
+		/* Define o estilo do cabeçalho */
+		header {
+			color: white;
+			text-align: center;
+		}
+
+		/* Define o estilo da seção principal */
+		#principal {
+			background-color: white;
+			border-radius: 10px;
+			padding: 15px;
+			width: 500px;
+			margin: auto;
+			box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.322);
+		}
+
+		/* Define o estilo do rodapé */
+		footer {
+			color: white;
+			text-align: center;
+			font-style: italic;
+		}
+
+		/* Define o estilo da classe "res" */
+		.res {
+			font-size: 25px;
+			height: auto;
+			font-weight: bold;
+		}
+		#flista{
+			width: 150px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Analisador de numeros!</h1>
+	</header>
+	<section id="principal">
+		<div id="dados">
+			Número entre (1 e 100):
+			
+			<input type="number" name="fnum" id="fnum">
+			<input type="button" value="Adicionar" onclick="adicionar()">
+			
+			<br><br>
+
+			<select name="" id="flista" size="6"></select>
+			
+			<br>
+
+			<input type="button" value="Finalizar">
+
+		</div>
+
+		<div id="res">
+			
+		</div>
+	</section>
+	<footer>
+		<p>&copy; Pablo Henrique</p>
+	</footer>
+
+<script src="analisador.js"></script>
+</body>
+</html>
